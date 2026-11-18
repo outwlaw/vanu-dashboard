@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Vanu — Dashboard</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="app">
+  <aside class="sidebar">
+    <a class="brand" href="#"><span class="brand-mark">V</span><span>vanu<small>CONTROL CENTER</small></span></a>
+    <div class="server-switch"><div class="server-icon">V</div><div><small>SERVIDOR SELECIONADO</small><b>Minha comunidade</b></div><span class="chev">⌄</span></div>
+    <div class="nav-label">GERENCIAMENTO</div>
+    <nav id="nav">
+      <button class="nav-item active" data-page="overview"><span>◫</span> Visão geral</button>
+      <button class="nav-item" data-page="messages"><span>▤</span> Mensagens embed</button>
+      <button class="nav-item" data-page="welcome"><span>♡</span> Boas-vindas</button>
+      <button class="nav-item" data-page="autorole"><span>♙</span> Autorole</button>
+      <button class="nav-item" data-page="tickets"><span>▣</span> Sistema de tickets</button>
+      <button class="nav-item" data-page="verification"><span>⬡</span> Verificação e regras</button>
+      <button class="nav-item" data-page="logs"><span>≡</span> Logs</button>
+    </nav>
+    <div class="sidebar-bottom"><div class="bot-status"><i></i><span><b>Vanu está online</b><small>Bot conectado</small></span></div><button class="profile"><span class="avatar">U</span><span><b>Seu usuário</b><small>Conta Discord</small></span><span class="chev">⋯</span></button></div>
+  </aside>
+  <main class="main">
+    <header class="topbar"><div class="crumb">Workspace <span>/</span> <b id="crumb">Visão geral</b></div><div class="top-actions"><span class="pill"><i></i> Sistema operacional</span><button class="help">? Ajuda</button><button class="avatar">U</button></div></header>
+    <section class="content">
+      <div class="welcome-row"><div><div class="eyebrow">TERÇA-FEIRA, 17 DE NOVEMBRO</div><h1 id="page-title">Visão geral</h1><p id="page-subtitle">Tudo o que acontece no seu servidor, em um só lugar.</p></div><button class="primary" id="invite">＋ Adicionar Vanu a outro servidor</button></div>
+      <div id="page-content"></div>
+      <footer>VANU CONTROL CENTER <span>•</span> Feito para cuidar da sua comunidade 💜 <span class="demo">Prévia demonstrativa</span></footer>
+    </section>
+  </main>
+</div>
+<div class="toast" id="toast"></div>
+<script src="app.js"></script>
+</body></html>
